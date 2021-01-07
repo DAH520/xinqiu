@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>滚动星球</title>
+		<style>
+			/**{
+			padding: 0;
+			margin: 0;
+			
+		}*/
+			
+			body {
+				background: #040361;
+				background-image: url(img/line.png);
+			}
+			
+			.img1{
+				opacity: 1;
+				width: 300px;
+				height: 300px;
+			}
+			.img2{
+				position: absolute;
+				margin: -45px -50px;
+				width: 400px;
+				height: 400px;
+			}
+			.img22{
+				position: absolute;
+				margin: -45px -50px;
+				width: 400px;
+				height: 400px;
+			}
+			.img3{
+				opacity: 0.5;
+				width: 300px;
+				height: 300px;
+			}
+			div {
+				position: absolute;
+				left: 700px;
+				top: 200px;
+				
+			}
+			div img{
+				position: absolute;
+				animation: xz 8s infinite linear;
+				transition: 8s linear inherit;
+			}
+			div .img1{
+				position: absolute;
+				animation: nxz 8s infinite linear;
+				transition: 8s linear inherit;
+			}
+			div .img22{
+				position: absolute;
+				animation: nxz 8s infinite linear;
+				transition: 8s linear inherit;
+			}
+			@keyframes xz {
+				from{
+					transform: rotate(0deg);
+				}
+				to {
+				transform: rotate(360deg);
+				}
+			}
+			@keyframes nxz {
+				from{
+					transform: rotate(0deg);
+				}
+				to {
+				transform: rotate(-360deg);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			
+			<img class="img2" src="img/jt.png"/>
+			<img class="img22" src="img/jt.png"/>
+			<img class="img3" src="img/map.png"/>
+			<img class="img1" src="img/lbx.png" />
+		</div>
+	</body>
+	<script>
+	</script>
+
+</html>
